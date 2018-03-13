@@ -63,8 +63,9 @@ public class MainActivity extends AppCompatActivity {
     private void loadWebsiteSource(boolean isRefreshed) {
         if(!isRefreshed)
         {
+
             String cache = Paper.book().read("cache");
-            if(cache != null && !cache.isEmpty()) // If have cache
+            if(cache != null && !cache.isEmpty() && !cache.equals("null")) // If have cache
             {
                 WebSite website = new Gson().fromJson(cache,WebSite.class); // Convert cache from Json to Object
                 adapter = new ListSourceAdapter(getBaseContext(),website);
@@ -84,6 +85,9 @@ public class MainActivity extends AppCompatActivity {
 
                         //Save to cache
                         Paper.book().write("cache",new Gson().toJson(response.body()));
+
+                        dialog.dismiss();
+
                     }
 
                     @Override
@@ -96,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         else // If from Swipe to Refresh
         {
 
-            dialog.show();
+            swipeLayout.setRefreshing(true);
             //Fetch new data
             mService.getSources().enqueue(new Callback<WebSite>() {
                 @Override

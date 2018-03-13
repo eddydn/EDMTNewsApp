@@ -20,6 +20,7 @@
             android:layout_weight="2"
             android:scaleType="centerCrop"
             android:layout_width="0dp"
+            android:src="@drawable/article"
             android:layout_height="wrap_content" />
 
      <TextView
