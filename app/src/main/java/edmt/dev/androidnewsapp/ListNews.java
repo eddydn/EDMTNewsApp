@@ -83,8 +83,7 @@ public class ListNews extends AppCompatActivity {
         if(getIntent() != null)
         {
             source = getIntent().getStringExtra("source");
-            sortBy = getIntent().getStringExtra("sortBy");
-            if(!source.isEmpty() && !sortBy.isEmpty())
+            if(!source.isEmpty())
             {
                 loadNews(source,false);
             }

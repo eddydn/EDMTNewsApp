@@ -3,6 +3,7 @@ package edmt.dev.androidnewsapp.Adapter;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -88,6 +89,7 @@ public class ListNewsAdapter extends RecyclerView.Adapter<ListNewsViewHolder> {
                 date = ISO8601Parse.parse(articleList.get(position).getPublishedAt());
             } catch (ParseException ex) {
                 ex.printStackTrace();
+
             }
 
             holder.article_time.setReferenceTime(date.getTime());

@@ -30,8 +30,6 @@ public class Common {
     {
         StringBuilder apiUrl = new StringBuilder("https://newsapi.org/v2/top-headlines?sources=");
         return apiUrl.append(source)
-                .append("&sortBy=")
-                .append(sortBy)
                 .append("&apiKey=")
                 .append(apiKEY)
                 .toString();
