@@ -13,7 +13,7 @@ import edmt.dev.androidnewsapp.Remote.RetrofitClient;
 public class Common {
     private static final String BASE_URL="https://newsapi.org/";
 
-    public  static final String API_KEY="a7072d9c2ad9495a8dd5cb58a7fd30df";
+    public  static final String API_KEY="a7072d9c2ad9495a8dd5cb58a7fd30df"; // a7072d9c2ad9495a8dd5cb58a7fd30df
 
     public static NewsService getNewsService()
     {

@@ -100,7 +100,7 @@ public class ListNews extends AppCompatActivity {
                         public void onResponse(Call<News> call, Response<News> response) {
                             dialog.dismiss();
                             //Get first article
-                            Picasso.with(getBaseContext())
+                            Picasso.get()
                                     .load(response.body().getArticles().get(0).getUrlToImage())
                                     .into(kbv);
 
@@ -135,7 +135,7 @@ public class ListNews extends AppCompatActivity {
                         public void onResponse(Call<News> call, Response<News> response) {
                             dialog.dismiss();
                             //Get first article
-                            Picasso.with(getBaseContext())
+                            Picasso.get()
                                     .load(response.body().getArticles().get(0).getUrlToImage())
                                     .into(kbv);
 

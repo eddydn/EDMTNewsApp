@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://E:\AndroidExamples\AndroidNewsApp\EDMTNewsApp\AndroidNewsApp.iml" filepath="E:\AndroidExamples\AndroidNewsApp\EDMTNewsApp\AndroidNewsApp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/EDMTNewsApp.iml" filepath="$PROJECT_DIR$/EDMTNewsApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AndroidNewsApp.iml" filepath="$PROJECT_DIR$/AndroidNewsApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://E:\AndroidExamples\AndroidNewsApp\EDMTNewsApp\app\app.iml" filepath="E:\AndroidExamples\AndroidNewsApp\EDMTNewsApp\app\app.iml" />
     </modules>
   </component>
 </project>

@@ -74,7 +74,7 @@ public class ListNewsAdapter extends RecyclerView.Adapter<ListNewsViewHolder> {
     @Override
     public void onBindViewHolder(ListNewsViewHolder holder, int position) {
 
-        Picasso.with(context)
+        Picasso.get()
                 .load(articleList.get(position).getUrlToImage())
                 .into(holder.article_image);
 
@@ -101,6 +101,7 @@ public class ListNewsAdapter extends RecyclerView.Adapter<ListNewsViewHolder> {
             public void onClick(View view, int position, boolean isLongClick) {
                 Intent detail = new Intent(context,DetailArticle.class);
                 detail.putExtra("webURL",articleList.get(position).getUrl());
+                detail.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(detail);
             }
         });
